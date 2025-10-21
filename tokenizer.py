@@ -32,8 +32,3 @@ class CharTokenizer:
     def vocabulary_size(self):
         return len(self.token_id_for_char)
     
-
-if __name__ == "__main__" :
-    tokenizer = CharTokenizer.train_from_text(text)
-    print(tokenizer.encode("Hello World"))
-    print(tokenizer.vocabulary_size())
